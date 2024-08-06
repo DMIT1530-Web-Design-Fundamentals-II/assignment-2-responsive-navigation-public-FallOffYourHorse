@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'CooperHewitt'; 
+    font-weight: bold; 
+    src: url('../CooperHewitt-Heavy.otf');
+}
+
+:root {
+    --dk-grey: #3a3a3a
+}
+
+/* Utility Classes */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: .5rem;
+}
+
+header, footer {
+    background-color: var(--dk-grey);
+}
+
+button {
+    border-radius: 40px;
+    border: none;
+    padding: .5rem 3rem;
+    background-color: var(--dk-grey);
+}
+
+ul {
+    list-style: none;
+}
+
+.main-menu li {
+    line-height: 2.5;
+    text-align: center;
+}
+
+.good-food {
+    padding: 30rem 10rem;
+}
+
+.local-travel {
+    background-color: #f2f2f2;
+    padding: 10rem 3rem;
+
+}
+
+header nav {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.main-menu svg {
+    display: none;
+}
+
+.layer {
+    margin-bottom: 2rem;
+}
+
+.layer-img {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.layer-img:nth-child(1) {
+    top: 10%;
+    left: 70%;
+}
+
+.layer-img:nth-child(2) {
+    top: 30%;
+    left: 60%;
+}
+
+/* Typography */
+header {
+    color: white;
+}
+
+body, .stuff a {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, a {
+    font-family: 'CooperHewitt', sans-serif;
+}
+
+h2 {
+    color: #404040;
+    font-size: 7.8rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+span {
+    color: #707070;
+}
+
+.main-menu svg {
+    width: 25px;
+}
+
+header li {
+    text-align: center;
+}
+
+.local-travel h2{
+    color: #727812;
+}
+
+.stuff h2 {
+    margin-left: 10px;
+}
+
+.stuff>div>svg {
+    width: 50px;
+    position: absolute;
+    color: #c65614;
+    margin-top: 15px;
+}
+
+.stuff a, .dropdown {
+    text-decoration: underline;
+}
+
+/* header & nav */
+
+  
+.toggle-btn {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+footer img {
+    width: 50px;
+}
+
+/* hidden menu indictors for mobile view */
+nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    background-color: var(--dk-grey);
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+}
+
+/* Media Queries */
+@media screen and (min-width: 520px){
+    header {
+        margin: 0 auto;
+    }
+
+    .main-menu svg {
+        display: unset;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+
+}
