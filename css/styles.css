@@ -19,6 +19,13 @@
     flex-direction: column;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 header {
     padding: .5rem;
 }
@@ -50,7 +57,26 @@ ul {
 .local-travel {
     background-color: #f2f2f2;
     padding: 10rem 3rem;
+}
 
+.stuff-title {
+    margin-left: 15rem;
+}
+
+.stuff div div {
+    justify-content: center;
+    width: 20vw;
+}
+
+.stuff div div p {
+    margin-bottom: 1rem;
+}
+
+.stuff div div img{
+    padding: 25px 15px 50px 10px; /* top/right/bottom/Left*/
+    width: 20vw;
+    background: #f2f2f2;
+    margin-bottom: -2.5rem;
 }
 
 header nav {
@@ -106,6 +132,11 @@ h2 {
     font-size: 7.8rem;
 }
 
+h3 {
+    color: #b29124;
+    font-size: 2.625rem;
+}
+
 a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -131,7 +162,7 @@ header li {
     margin-left: 10px;
 }
 
-.stuff>div>svg {
+.stuff>div>div>svg {
     width: 50px;
     position: absolute;
     color: #c65614;
