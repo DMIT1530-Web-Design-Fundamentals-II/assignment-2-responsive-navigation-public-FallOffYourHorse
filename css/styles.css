@@ -74,7 +74,7 @@ ul {
 
 .stuff div div img{
     padding: 25px 15px 50px 10px; /* top/right/bottom/Left*/
-    width: 20vw;
+    width: 30rem;
     background: #f2f2f2;
     margin-bottom: -2.5rem;
 }
@@ -106,11 +106,14 @@ header nav {
 .layer-img:nth-child(1) {
     top: 10%;
     left: 70%;
+    width: fit-content;
 }
 
 .layer-img:nth-child(2) {
     top: 30%;
     left: 60%;
+    width: fit-content;
+
 }
 
 /* Typography */
